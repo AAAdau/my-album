@@ -35,3 +35,8 @@
     position: relative;
     left: 43%;
   }
+
+  app-about {
+    width: 1000px;
+    height: 100px;
+  }
