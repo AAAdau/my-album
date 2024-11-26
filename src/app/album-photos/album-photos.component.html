@@ -1,0 +1,5 @@
+<h2>Album Photos</h2>
+<div *ngFor="let photo of photos">
+  <img [src]="photo.url" alt="{{ photo.title }}">
+</div>
+<button routerLink="/albums">Return back</button>

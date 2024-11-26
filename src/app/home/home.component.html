@@ -1,0 +1,18 @@
+<a [routerLink]="['/']">
+  <h1>Album</h1>
+</a>
+
+<button (click)="openCreateAlbumDialog()" class="home-button">+</button>
+
+<div *ngIf="showCreateAlbumDialog" class="create-album-dialog">
+  <label>User ID: </label>
+  <input [(ngModel)]="newAlbum.userId" type="number" required /><br />
+
+  <label>Album ID: </label>
+  <input [(ngModel)]="newAlbum.id" type="number" required /><br />
+
+  <label>Title: </label>
+  <input [(ngModel)]="newAlbum.title" type="text" required /><br />
+
+  <button (click)="createAlbum()">Submit</button>
+</div>`

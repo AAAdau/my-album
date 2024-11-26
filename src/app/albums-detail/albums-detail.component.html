@@ -1,0 +1,20 @@
+<h1>Album details</h1>
+<div *ngIf="album" class="ds">
+    <h3>user id: {{album.userId}}</h3>
+    <h3>album id: {{album.id}}</h3>
+    <h3>album title: {{album.title}}</h3>
+    <a [routerLink]="['/album', album.id, 'photos']">Photos</a>
+   
+   
+</div>
+
+<button (click)="editTitle()"class="but">Edit Title</button>
+
+<div *ngIf="editingTitle" class="inf">
+  <label>New Title: </label>
+  <input [(ngModel)]="newTitle" type="text" required /><br />
+  <button (click)="saveTitle()">Save</button>
+</div>
+<button (click)="returnToHome()" class="but" >Home</button>
+
+
