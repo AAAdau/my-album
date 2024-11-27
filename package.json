@@ -6,7 +6,9 @@
     "start": "ng serve",
     "build": "ng build",
     "watch": "ng build --watch --configuration development",
-    "test": "ng test"
+    "test": "ng test",
+    "deploy": "ng build --base-href https://AAAdau.github.io/my-album/ && gh-pages -d dist"
+
   },
   "private": true,
   "dependencies": {
@@ -28,6 +30,7 @@
     "@angular/compiler-cli": "^17.2.0",
     "@types/jasmine": "~5.1.0",
     "@types/node": "^20.11.25",
+    "gh-pages": "^6.2.0",
     "jasmine-core": "~5.1.0",
     "karma": "~6.4.0",
     "karma-chrome-launcher": "~3.2.0",
